@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             sensorManager.unregisterListener(this);
         }
     }
-
     private void updateMoneyDisplay() {
         if (totalMoney > 0) {
             moneyTextView.setText(getString(R.string.Money) + " " + totalMoney);
@@ -69,19 +68,26 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
-    private void rollDice() {
+    private boolean validateBet() {
         String betStr = betEditText.getText().toString();
         if (betStr.isEmpty()) {
             Toast.makeText(this, getString(R.string.SetValue), Toast.LENGTH_SHORT).show();
-            return;
+            return false;
         }
         int betAmount = Integer.parseInt(betStr);
         if (betAmount <= 0) {
             Toast.makeText(this, getString(R.string.HigherThanZero), Toast.LENGTH_SHORT).show();
-            return;
+            return false;
         }
         if (betAmount > totalMoney) {
             Toast.makeText(this, getString(R.string.NoMoneyLeft), Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
+    }
+
+    private void rollDice() {
+        if (!validateBet()) {
             return;
         }
         Random random = new Random();
@@ -90,11 +96,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         int diceRoll = random.nextInt(10); // Spieler würfelt eine Zahl zwischen 1 und 10
 
         if (diceRoll > randomNumber) {
+            int betAmount = Integer.parseInt(betEditText.getText().toString());
             int winnings = betAmount; // Spieler gewinnt
             totalMoney += winnings;
             resultTextView.setText(getString(R.string.Win) + " " + winnings + " " + getString(R.string.Moneyy));
             vibrate();
         } else if (diceRoll < randomNumber) {
+            int betAmount = Integer.parseInt(betEditText.getText().toString());
             totalMoney -= betAmount;// Spieler verliert
             resultTextView.setText(getString(R.string.lose) + " " + betAmount + " " + getString(R.string.Moneyy));
         } else {
@@ -102,6 +110,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         updateMoneyDisplay();
     }
+
+
 
     private void vibrate() {
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
@@ -127,8 +137,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         }).start();
     }
-
- 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // Nicht benötigt
