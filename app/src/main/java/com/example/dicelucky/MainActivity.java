@@ -58,6 +58,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             sensorManager.unregisterListener(this);
         }
     }
+    @Override
+    protected void onPause(){
+        super.onPause();
+        GameDataHandler.saveTotalMoney(this, totalMoney);
+    }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        GameDataHandler.loadTotalMoney(this);
+    }
+
     private void updateMoneyDisplay() {
         if (totalMoney > 0) {
             moneyTextView.setText(getString(R.string.Money) + " " + totalMoney);
@@ -90,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if (!validateBet()) {
             return;
         }
+
         Random random = new Random();
         int randomNumber = random.nextInt(10); // Zufällige Zahl zwischen 1 und 10 generieren
 
