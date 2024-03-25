@@ -150,6 +150,22 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }).start();
     }
     @Override
+    public void onSensorChanged(SensorEvent event) {
+        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            long currentTime = System.currentTimeMillis();
+            if ((currentTime - lastShakeTime) > 1000) { // Mindestabstand von 1 Sekunde zwischen Schütteln
+                float x = event.values[0];
+                float y = event.values[1];
+                float z = event.values[2];
+                double acceleration = Math.sqrt(x * x + y * y + z * z) - SensorManager.GRAVITY_EARTH;
+                if (acceleration > 30) { // Empfindlichkeit des Schüttelns
+                    rollDice();
+                    lastShakeTime = currentTime;
+                }
+            }
+        }
+    }
+    @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // Nicht benötigt
     }
