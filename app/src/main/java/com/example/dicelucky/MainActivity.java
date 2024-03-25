@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         totalMoney = GameDataHandler.loadTotalMoney(this);
         updateMoneyDisplay();
 
+        scheduleMoneyIncrement();
     }
 
     @Override
@@ -57,8 +58,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             sensorManager.unregisterListener(this);
         }
     }
-
-
 
     private void updateMoneyDisplay() {
         if (totalMoney > 0) {
@@ -114,6 +113,22 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         }
     }
+
+    private void scheduleMoneyIncrement() {
+        new Thread(() -> {
+            while (true) {
+                try {
+                    Thread.sleep(3600000); // 1 Stunde (360000 Millisekunden)
+                    totalMoney = totalMoney + 20; // Geld um 20 erhöht
+                    runOnUiThread(() -> updateMoneyDisplay());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+
+ 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // Nicht benötigt
