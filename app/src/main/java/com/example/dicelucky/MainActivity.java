@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }).start();
     }
     @Override
-    public void onSensorChanged(SensorEvent event) {
+    public void onSensorChanged(SensorEvent event) { // diese Funktion wurde von hier aus zusammengebaut https://gist.github.com/iewnait/2138807
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             long currentTime = System.currentTimeMillis();
             if ((currentTime - lastShakeTime) > 1000) { // Mindestabstand von 1 Sekunde zwischen Schütteln
