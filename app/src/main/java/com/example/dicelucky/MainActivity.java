@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
-    private boolean validateBet() {
+    private boolean betCheck() {
         String betStr = betEditText.getText().toString();
         if (betStr.isEmpty()) {
             Toast.makeText(this, getString(R.string.setValue), Toast.LENGTH_SHORT).show();
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     private void rollDice() {
-        if (!validateBet()) {
+        if (!betCheck()) {
             return;
         }
 
