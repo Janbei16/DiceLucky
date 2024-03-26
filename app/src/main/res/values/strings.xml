@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">DiceLucky</string>
-    <string name="Money">Coins:</string>
-    <string name="NoMoney">Keine Coins</string>
-    <string name="SetValue">Bitte setzen Sie einen Betrag.</string>
-    <string name="HigherThanZero">Der Betrag muss größer als Null sein.</string>
-    <string name="NoMoneyLeft">Du hast nicht genügend Geld.</string>
-    <string name="Moneyy">Coins.</string>
-    <string name="Win">Du hast gewonnen! Du bekommst </string>
+    <string name="money">Coins:</string>
+    <string name="noMoney">Keine Coins</string>
+    <string name="setValue">Bitte setzen Sie einen Betrag.</string>
+    <string name="higherThanZero">Der Betrag muss größer als Null sein.</string>
+    <string name="noMoneyLeft">Du hast nicht genügend Geld.</string>
+    <string name="moneyy">Coins.</string>
+    <string name="win">Du hast gewonnen! Du bekommst </string>
     <string name="lose">Du hast verloren! Du verlierst </string>
     <string name="tie">Es ist ein Unentschieden! Du behältst deinen Einsatz. </string>
 </resources>

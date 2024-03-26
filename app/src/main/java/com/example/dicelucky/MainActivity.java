@@ -71,10 +71,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     private void updateMoneyDisplay() {
         if (totalMoney > 0) {
-            moneyTextView.setText(getString(R.string.Money) + " " + totalMoney);
+            moneyTextView.setText(getString(R.string.money) + " " + totalMoney);
         }
         if (totalMoney <= 0) {
-            moneyTextView.setText(getString(R.string.NoMoney));
+            moneyTextView.setText(getString(R.string.noMoney));
         }
 
     }
@@ -82,16 +82,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private boolean validateBet() {
         String betStr = betEditText.getText().toString();
         if (betStr.isEmpty()) {
-            Toast.makeText(this, getString(R.string.SetValue), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.setValue), Toast.LENGTH_SHORT).show();
             return false;
         }
         int betAmount = Integer.parseInt(betStr);
         if (betAmount <= 0) {
-            Toast.makeText(this, getString(R.string.HigherThanZero), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.higherThanZero), Toast.LENGTH_SHORT).show();
             return false;
         }
         if (betAmount > totalMoney) {
-            Toast.makeText(this, getString(R.string.NoMoneyLeft), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.noMoneyLeft), Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;
@@ -111,12 +111,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             int betAmount = Integer.parseInt(betEditText.getText().toString());
             int winnings = betAmount; // Spieler gewinnt
             totalMoney += winnings;
-            resultTextView.setText(getString(R.string.Win) + " " + winnings + " " + getString(R.string.Moneyy));
+            resultTextView.setText(getString(R.string.win) + " " + winnings + " " + getString(R.string.moneyy));
             vibrate();
         } else if (diceRoll < randomNumber) {
             int betAmount = Integer.parseInt(betEditText.getText().toString());
             totalMoney -= betAmount;// Spieler verliert
-            resultTextView.setText(getString(R.string.lose) + " " + betAmount + " " + getString(R.string.Moneyy));
+            resultTextView.setText(getString(R.string.lose) + " " + betAmount + " " + getString(R.string.moneyy));
         } else {
             resultTextView.setText(getString(R.string.tie));// Unentschieden
         }
