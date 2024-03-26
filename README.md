@@ -27,3 +27,7 @@ Lade die APK-Datei auf deinem Samsung Galaxy S10e oder ein kompatibles Android-G
 Installiere die APK-Datei auf deinem Gerät, indem man den Anweisungen auf dem Bildschirm folgen.
 
 Starten Sie die App und beginnen Sie mit dem Spielen, indem Sie die Anweisungen auf dem Bildschirm befolgen.
+
+Linter nutzen:
+
+- Um Linter zu nutzen muss man "gradlew lint" im Terminal eingeben
