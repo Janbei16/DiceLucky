@@ -18,3 +18,12 @@ Funktionen:
 - Benutzerdefiniertes Logo: Die App verfügt über ein eigenes Logo, das sie einzigartig macht.
 
 - Datenpersistenz: Die Spielerdaten werden zuverlässig in einem SharedPreferences gespeichert, sodass der Benutzer die App pausieren oder schließen kann, ohne seine Fortschritte zu verlieren.
+
+Installation und Verwendung:
+Um die App zu installieren bitte diesen Schritten Folgen:
+
+Lade die APK-Datei auf deinem Samsung Galaxy S10e oder ein kompatibles Android-Gerät herunter.
+
+Installiere die APK-Datei auf deinem Gerät, indem man den Anweisungen auf dem Bildschirm folgen.
+
+Starten Sie die App und beginnen Sie mit dem Spielen, indem Sie die Anweisungen auf dem Bildschirm befolgen.
