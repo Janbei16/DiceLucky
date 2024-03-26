@@ -22,6 +22,8 @@ Funktionen:
 Installation und Verwendung:
 Um die App zu installieren bitte diesen Schritten Folgen:
 
+Ordner entzipen um alles zu sehen!!
+
 Lade die APK-Datei auf deinem Samsung Galaxy S10e oder ein kompatibles Android-Gerät herunter.
 
 Installiere die APK-Datei auf deinem Gerät, indem man den Anweisungen auf dem Bildschirm folgen.
