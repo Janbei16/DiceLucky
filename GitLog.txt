@@ -1,66 +1,36 @@
-commit 169ca62adb8efb1270522c7c945b33ac9cc037ca
-Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+commit 26a6275bc80756ca50060afa47252e6af8121c2d (HEAD -> main, origin/main)
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>                  
+Date:   Wed Mar 27 10:33:29 2024 +0100                                     
+                                                                           
+    add a try catch to fixe a bug with the input by a dice  
+
 commit 12f5bafc1cc4a02df72473944d5010899904f5b3 (HEAD -> main, origin/main)
 Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 14:56:12 2024 +0100
+Date:   Wed Mar 27 09:30:12 2024 +0100
 
     Small changes delete files and ad Files for the Zip
 
 commit 1cbe6823b807496478fe8c11c0c0cd3e0f9a5230
 Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 14:16:38 2024 +0100
+Date:   Wed Mar 27 09:16:38 2024 +0100
 
     Document chang
 
 commit f11dcb02611fa19ce46b31339b734deabdb76845
 Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 13:33:50 2024 +0100
+Date:   Wed Mar 27 09:08:50 2024 +0100
 
     change Name, makes more sense
 
 commit 9ae5992de596a177728cee1b1ddb9e25b59aa701
 Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 13:30:50 2024 +0100
+Date:   Wed Mar 27 09:05:50 2024 +0100
 
     Made the reflexion
 
 commit 9dd60f55b0f18f640eaddbca8ad73e2880ba02e2
 Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 13:30:35 2024 +0100
-
-    update ReadMe
-
-commit 169ca62adb8efb1270522c7c945b33ac9cc037ca
-Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 12:55:45 2024 +0100
-:...skipping...
-commit 12f5bafc1cc4a02df72473944d5010899904f5b3 (HEAD -> main, origin/main)
-Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 14:56:12 2024 +0100
-
-    Small changes delete files and ad Files for the Zip
-
-commit 1cbe6823b807496478fe8c11c0c0cd3e0f9a5230
-Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 14:16:38 2024 +0100
-
-    Document chang
-
-commit f11dcb02611fa19ce46b31339b734deabdb76845
-Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 13:33:50 2024 +0100
-
-    change Name, makes more sense
-
-commit 9ae5992de596a177728cee1b1ddb9e25b59aa701
-Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 13:30:50 2024 +0100
-
-    Made the reflexion
-
-commit 9dd60f55b0f18f640eaddbca8ad73e2880ba02e2
-Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
-Date:   Tue Mar 27 9:30:35 2024 +0100
+Date:   Wed Mar 27 08:30:35 2024 +0100
 
     update ReadMe
 
@@ -92,19 +62,19 @@ commit 273d28a54aca4af090491bbc740305a2fba25aa3
 Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
 Date:   Tue Mar 26 17:22:02 2024 +0100
 
-    Ich habe die Webseite feritg gemacht
+    I finished the Website
 
 commit 2b90f64064082156856fd9e87c709c2838f9490c
 Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
 Date:   Tue Mar 26 16:21:44 2024 +0100
 
-    Ich habe das File Testprotokoll fertig gemacht
+    I finished the file Testprotokoll
 
 commit dcb8315a6098dde5103d54ff42d572e1fbdc5575
 Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
 Date:   Tue Mar 26 15:58:05 2024 +0100
 
-    Das Dokument Technischer Entwurf fertig gemacht
+    I finished the file Technischer Entwurf
 
 commit bdd2f9b89afaa4199c38b74c638c3f2084eacd4a
 Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
