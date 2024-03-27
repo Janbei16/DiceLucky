@@ -9,6 +9,7 @@ Funktionen:
 
 Für die Funktion onSensorChanged habe ich diese Seite verwendet und dann alles zusammen geklickt https://gist.github.com/iewnait/2138807
 Teilweise kopiert von dieser Seite https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview#java in der Klasse MainActivity.java Zeile 44-52
+![alt text](image-1.png)
 
 - Coins und Dicen: Zu Beginn erhält der Benutzer 100 Coins, mit denen er spielen kann. Er kann diese Coins verwenden, um zu Dicen und möglicherweise mehr Coins zu gewinnen.
 
