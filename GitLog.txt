@@ -1,0 +1,186 @@
+commit 169ca62adb8efb1270522c7c945b33ac9cc037ca
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+commit 12f5bafc1cc4a02df72473944d5010899904f5b3 (HEAD -> main, origin/main)
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 14:56:12 2024 +0100
+
+    Small changes delete files and ad Files for the Zip
+
+commit 1cbe6823b807496478fe8c11c0c0cd3e0f9a5230
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 14:16:38 2024 +0100
+
+    Document chang
+
+commit f11dcb02611fa19ce46b31339b734deabdb76845
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 13:33:50 2024 +0100
+
+    change Name, makes more sense
+
+commit 9ae5992de596a177728cee1b1ddb9e25b59aa701
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 13:30:50 2024 +0100
+
+    Made the reflexion
+
+commit 9dd60f55b0f18f640eaddbca8ad73e2880ba02e2
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 13:30:35 2024 +0100
+
+    update ReadMe
+
+commit 169ca62adb8efb1270522c7c945b33ac9cc037ca
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 12:55:45 2024 +0100
+:...skipping...
+commit 12f5bafc1cc4a02df72473944d5010899904f5b3 (HEAD -> main, origin/main)
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 14:56:12 2024 +0100
+
+    Small changes delete files and ad Files for the Zip
+
+commit 1cbe6823b807496478fe8c11c0c0cd3e0f9a5230
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 14:16:38 2024 +0100
+
+    Document chang
+
+commit f11dcb02611fa19ce46b31339b734deabdb76845
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 13:33:50 2024 +0100
+
+    change Name, makes more sense
+
+commit 9ae5992de596a177728cee1b1ddb9e25b59aa701
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 13:30:50 2024 +0100
+
+    Made the reflexion
+
+commit 9dd60f55b0f18f640eaddbca8ad73e2880ba02e2
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 27 9:30:35 2024 +0100
+
+    update ReadMe
+
+commit 169ca62adb8efb1270522c7c945b33ac9cc037ca
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 18:55:45 2024 +0100
+
+    ReadMe done
+
+commit 835e2f9f0732ddaabb9be0be034cbde4fb946cbc
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 17:55:23 2024 +0100
+
+    Pich update and Technischer Entwurf update
+
+commit 2a5d5f33286207eac2b7566914cc403cc9ddece8
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 17:35:53 2024 +0100
+
+    cleaned code to CamelCase
+
+commit 497077ab5977e605dd2259d3dfc47715df8df333
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 17:22:39 2024 +0100
+
+    added commands in the code
+
+commit 273d28a54aca4af090491bbc740305a2fba25aa3
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 17:22:02 2024 +0100
+
+    Ich habe die Webseite feritg gemacht
+
+commit 2b90f64064082156856fd9e87c709c2838f9490c
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 16:21:44 2024 +0100
+
+    Ich habe das File Testprotokoll fertig gemacht
+
+commit dcb8315a6098dde5103d54ff42d572e1fbdc5575
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 15:58:05 2024 +0100
+
+    Das Dokument Technischer Entwurf fertig gemacht
+
+commit bdd2f9b89afaa4199c38b74c638c3f2084eacd4a
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 15:12:10 2024 +0100
+
+    add Sensor ACCELEROMETER and used it
+
+commit 026c5b09473457511d351fc81c9eb88a2f637555
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 14:06:37 2024 +0100
+
+    add onPause and onResume
+
+commit 2d1299130e37995eb35920fb928b537800b76dfd
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 13:31:47 2024 +0100
+
+    Split Function rolleDice into rolleDice and validateBet
+
+commit 119fef13792d1c0b5e2cd1fbb0973b8862f4bd71
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 12:57:52 2024 +0100
+
+    edit FIle Technischer Entwurf
+
+commit 5d6cf0d6b794deb59bbbe070628d3bbec8f29435
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 12:02:16 2024 +0100
+
+    add get Coins every Hour
+
+commit 57cc546ea608d7a8eacf0deef0fc673f1b51b800
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 11:44:04 2024 +0100
+
+    Add RoleDice and Vibrate
+
+commit 61466880df1c19027faa776d44b9a762fc915dae
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 10:23:08 2024 +0100
+
+    add Function loadTotalMoney and saveTotalMoney
+
+commit 6a67d68de3598a98b4f5f0d8cec82d2b7dbd6579
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Tue Mar 26 9:22:08 2024 +0100
+
+    Add Class GameDataHandler
+
+commit e9442c84adf226d2b12b5dc40d9446c7173d046c
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Mon Mar 25 22:07:18 2024 +0100
+
+    Strings for the text
+
+commit 151fb5c4eaae16c7b5ec1317c23ad817ab6a397b
+Author: Jannis Beichler | PAWI <jannis.beichler@pawi.com>
+Date:   Mon Mar 25 21:30:00 2024 +0100
+
+    Logo and permission Vibrate
+
+commit 5e97fbd815f2c7e858fad11cd367507d233a4f61
+Author: beichler <jannis.beichler@pawi.com>
+Date:   Mon Mar 25 21:09:52 2024 +0100
+
+    Made the GUI
+
+commit 10f0210dbead0ec611a6e30755244db5c44b7f1a
+Author: beichler <jannis.beichler@pawi.com>
+Date:   Mon Mar 25 15:52:10 2024 +0100
+
+    First Commit
+
+commit b6dbb4d7998cd1f0007692b260d3ead6f710466f
+Author: beichler <jannis.beichler@pawi.com>
+Date:   Mon Mar 25 12:56:18 2024 +0100
+
+    first commit
+(END)

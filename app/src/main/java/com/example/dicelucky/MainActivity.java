@@ -85,17 +85,23 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             Toast.makeText(this, getString(R.string.setValue), Toast.LENGTH_SHORT).show();
             return false;
         }
-        int betAmount = Integer.parseInt(betStr);
-        if (betAmount <= 0) {
-            Toast.makeText(this, getString(R.string.higherThanZero), Toast.LENGTH_SHORT).show();
+        try {
+            int betAmount = Integer.parseInt(betStr);
+            if (betAmount <= 0) {
+                Toast.makeText(this, getString(R.string.higherThanZero), Toast.LENGTH_SHORT).show();
+                return false;
+            }
+            if (betAmount > totalMoney) {
+                Toast.makeText(this, getString(R.string.noMoneyLeft), Toast.LENGTH_SHORT).show();
+                return false;
+            }
+            return true;
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, getString(R.string.invalidInput), Toast.LENGTH_SHORT).show();
             return false;
         }
-        if (betAmount > totalMoney) {
-            Toast.makeText(this, getString(R.string.noMoneyLeft), Toast.LENGTH_SHORT).show();
-            return false;
-        }
-        return true;
     }
+
 
     private void rollDice() {
         if (!betCheck()) {
@@ -140,8 +146,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         new Thread(() -> {
             while (true) {
                 try {
-                    Thread.sleep(3600000); // 1 Stunde (360000 Millisekunden)
-                    totalMoney = totalMoney + 20; // Geld um 20 erhöht
+                    Thread.sleep(60000); // 1 minute (60000 Millisekunden)
+                    totalMoney = totalMoney + 1; // Geld um 1 erhöht
                     runOnUiThread(() -> updateMoneyDisplay());
                 } catch (InterruptedException e) {
                     e.printStackTrace();

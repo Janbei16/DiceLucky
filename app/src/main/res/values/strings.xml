@@ -9,4 +9,5 @@
     <string name="win">Du hast gewonnen! Du bekommst </string>
     <string name="lose">Du hast verloren! Du verlierst </string>
     <string name="tie">Es ist ein Unentschieden! Du behältst deinen Einsatz. </string>
+    <string name="invalidInput">Gib eine ganze Zahl ein</string>
 </resources>
