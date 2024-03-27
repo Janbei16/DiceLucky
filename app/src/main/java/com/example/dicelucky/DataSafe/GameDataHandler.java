@@ -1,4 +1,4 @@
-package com.example.dicelucky;
+package com.example.dicelucky.DataSafe;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 
 public class GameDataHandler {
 
-    private static final String PREF_NAME = "com.example.dicelucky.GameDataHandler";
+    private static final String PREF_NAME = "com.example.dicelucky.DataSafe.GameDataHandler";
     private static final String KEY_MONEY = "money";
 
     public static int loadTotalMoney(Activity activity) {
