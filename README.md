@@ -7,13 +7,16 @@ Autor: Jannis Beichler
 
 Funktionen:
 
+Für die Funktion onSensorChanged habe ich diese Seite verwendet und dann alles zusammen geklickt https://gist.github.com/iewnait/2138807
+Teilweise kopiert von dieser Seite https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview#java in der Klasse MainActivity.java Zeile 44-52
+
 - Coins und Dicen: Zu Beginn erhält der Benutzer 100 Coins, mit denen er spielen kann. Er kann diese Coins verwenden, um zu Dicen und möglicherweise mehr Coins zu gewinnen.
 
 - Zwei Dicen-Methoden: Der Benutzer kann entweder das Handy schütteln oder einen Button drücken, um zu Dicen. Beim Schütteln des Handys kann er jede Sekunde ein Dice machen. Beim Drücken des Buttons kann er so oft er möchte in der Sekunde Dicen.
 
 - Gewinnvibration: Wenn der Benutzer gewinnt, wird das Handy vibrieren, um den Erfolg zu signalisieren.
 
-- Automatische Aufladung: Alle Stunden werden automatisch 20 zusätzliche Coins dem Guthaben hinzugefügt, damit der Benutzer weiterspielen kann, wenn das Geld ausgeht.
+- Automatische Aufladung: Jede minute wird automatisch 1 zusätzlicher Coin dem Guthaben hinzugefügt,wenn der Benuter auf der App ist, damit der Benutzer weiterspielen kann, wenn das Geld ausgeht.
 
 - Benutzerdefiniertes Logo: Die App verfügt über ein eigenes Logo, das sie einzigartig macht.
 

@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         rollButton.setOnClickListener(v -> rollDice());
 
+        // Teilweise kopiert von dieser Seite https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview#java
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (sensorManager != null) {
             accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -47,13 +48,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
             }
         }
-
         totalMoney = GameDataHandler.loadTotalMoney(this);
-        updateMoneyDisplay();
 
+        updateMoneyDisplay();
         scheduleMoneyIncrement();
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -71,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         super.onResume();
         GameDataHandler.loadTotalMoney(this);
     }
-
     private void updateMoneyDisplay() {
         if (totalMoney > 0) {
             moneyTextView.setText(getString(R.string.money) + " " + totalMoney);
@@ -81,15 +79,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
 
     }
-
     private boolean betCheck() {
-        String betStr = betEditText.getText().toString();
-        if (betStr.isEmpty()) {
+        String betString = betEditText.getText().toString();
+        if (betString.isEmpty()) {
             Toast.makeText(this, getString(R.string.setValue), Toast.LENGTH_SHORT).show();
             return false;
         }
         try {
-            int betAmount = Integer.parseInt(betStr);
+            int betAmount = Integer.parseInt(betString);
             if (betAmount <= 0) {
                 Toast.makeText(this, getString(R.string.higherThanZero), Toast.LENGTH_SHORT).show();
                 return false;
@@ -105,12 +102,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
     }
 
-
     private void rollDice() {
         if (!betCheck()) {
             return;
         }
-
         Random random = new Random();
         int randomNumber = random.nextInt(10); // Zufällige Zahl zwischen 1 und 10 generieren
 
@@ -131,8 +126,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         updateMoneyDisplay();
     }
-
-
 
     private void vibrate() {
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
