@@ -37,3 +37,4 @@ Starten Sie die App und beginnen Sie mit dem Spielen, indem Sie die Anweisungen 
 Linter nutzen:
 
 - Um Linter zu nutzen muss man "gradlew lint" im Terminal eingeben
+- Bei mir wird das aber nicht gehen, da lint Java Version 17 verlangt und ich bin auf Version 8.1

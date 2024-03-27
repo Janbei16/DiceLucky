@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dicelucky.DataSafe.GameDataHandler;
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         updateMoneyDisplay();
         scheduleMoneyIncrement();
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -60,16 +62,19 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             sensorManager.unregisterListener(this);
         }
     }
+
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
         GameDataHandler.saveTotalMoney(this, totalMoney);
     }
+
     @Override
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
         GameDataHandler.loadTotalMoney(this);
     }
+
     private void updateMoneyDisplay() {
         if (totalMoney > 0) {
             moneyTextView.setText(getString(R.string.money) + " " + totalMoney);
@@ -79,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
 
     }
+
     private boolean betCheck() {
         String betString = betEditText.getText().toString();
         if (betString.isEmpty()) {
@@ -151,6 +157,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         }).start();
     }
+
     @Override
     public void onSensorChanged(SensorEvent event) { // diese Funktion wurde von hier aus zusammengebaut https://gist.github.com/iewnait/2138807
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
@@ -167,6 +174,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         }
     }
+
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // Nicht benötigt
